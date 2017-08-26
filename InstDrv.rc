@@ -1,0 +1,225 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\InstDrv.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\InstDrv.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 驱动加载工具 V1.0版"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "驱动加载工具 V1.0版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011:Raymond Chan",IDC_STATIC,40,24,125,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "E-Mail:cyw389@163.com",IDC_STATIC,40,37,122,8
+END
+
+IDD_INSTDRV_DIALOG DIALOGEX 0, 0, 298, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "驱动加载工具 V1.0版"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "安装",IDC_LOAD_BTN,9,53,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,238,53,50,14
+    GROUPBOX        "",IDC_STATIC,3,1,291,101
+    GROUPBOX        "",IDC_STATIC,7,5,283,40
+    LTEXT           "驱动路径:",IDC_STATIC,11,16,37,8
+    GROUPBOX        "",IDC_STATIC,7,44,283,28
+    GROUPBOX        "",IDC_STATIC,7,71,283,27
+    EDITTEXT        IDC_SYS_PATH_EDIT,49,13,161,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BROWSE_BTN,213,13,21,14
+    CONTROL         "总在最前",IDC_TOP_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,244,15,44,10
+    CONTROL         "NT式驱动",IDC_NT_SYS_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,50,32,48,10
+    CONTROL         "WDM式驱动",IDC_WDM_SYS_RADIO,"Button",BS_AUTORADIOBUTTON,151,32,52,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,238,9,1,37
+    PUSHBUTTON      "启动",IDC_START_BTN,65,53,50,14
+    PUSHBUTTON      "停止",IDC_STOP_BTN,122,53,50,14
+    PUSHBUTTON      "卸载",IDC_UNLOAD_BTN,180,53,50,14
+    LTEXT           "状态：支持拖曳获取文件路径",IDC_ALERT_STATIC,10,84,197,9
+    PUSHBUTTON      ">>>>",IDC_START_SYS_CONFIG_BTN,246,29,37,14
+    LTEXT           "Code:cyw389@163.com",IDC_STATIC,212,83,78,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,54
+ PRODUCTVERSION 1,0,0,54
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "驱动加载工具 V1.0版"
+            VALUE "FileVersion", "1, 0, 0, 54"
+            VALUE "InternalName", "驱动加载工具"
+            VALUE "LegalCopyright", "版权所有 (C) 2011:Raymond Chan"
+            VALUE "OriginalFilename", "InstDrv.EXE"
+            VALUE "ProductName", "驱动加载工具 V1.0版"
+            VALUE "ProductVersion", "1, 0, 0, 54"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "POP_MENU"
+    BEGIN
+        MENUITEM "引导启动",                        ID_BOOT_START_MENUITEM
+        MENUITEM "开机启动",                        ID_AUTO_START_MENUITEM
+        MENUITEM "加载启动",                        ID_DEMAND_START_MENUITEM
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 驱动加载工具 V1.0版(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\InstDrv.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
